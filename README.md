@@ -2,3 +2,5 @@
 Тип: Литературный портал.
 
 Инструменты: C#, ASP WebApi + Blazorwasm.
+
+![Blazor Icon](https://github.com/HainoCreat/AvalonPortal/blob/eb00f2ef35a4a35999eff21c86853d080069560c/src/Avalon.Web.Blazor/wwwroot/favicon.png)
