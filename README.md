@@ -3,3 +3,4 @@
 
 Инструменты: C#, ASP WebApi + Blazorwasm.
 
+C:\Users\User\OneDrive\Документы\projects\code\api\Avalon\src\Avalon.Web.Blazor\wwwroot\favicon.png
