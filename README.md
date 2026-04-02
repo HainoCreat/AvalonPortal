@@ -2,5 +2,3 @@
 Тип: Литературный портал.
 
 Инструменты: C#, ASP WebApi + Blazorwasm.
-
-![Uploading image.png…]()
