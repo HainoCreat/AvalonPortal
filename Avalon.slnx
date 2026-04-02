@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Avalon.Application/Avalon.Application.csproj" />
+    <Project Path="src/Avalon.Domain/Avalon.Domain.csproj" />
+    <Project Path="src/Avalon.Infrastructure/Avalon.Infrastructure.csproj" />
+    <Project Path="src/Avalon.Web.Blazor/Avalon.Web.Blazor.csproj" />
+    <Project Path="src/Avalon.WebApi/Avalon.WebApi.csproj" />
+  </Folder>
+</Solution>

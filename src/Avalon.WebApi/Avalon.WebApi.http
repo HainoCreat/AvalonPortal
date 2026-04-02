@@ -1,0 +1,6 @@
+@Avalon.WebApi_HostAddress = http://localhost:5092
+
+GET {{Avalon.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

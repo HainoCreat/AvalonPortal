@@ -1,0 +1,12 @@
+# .gitignore
+bin/
+obj/
+*.csproj.user
+*.user
+*.suo
+*.sln.docstates
+*.cache
+*.vs/
+.vscode/
+wwwroot/lib/
+appsettings.*.json   # если не хочешь коммитить секреты
