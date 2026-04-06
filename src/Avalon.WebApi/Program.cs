@@ -1,9 +1,14 @@
 using System;
-using Avalon.Infrastructure.Persistence;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+
+using Avalon.Application.Services.Extensions;
+using Avalon.Infrastructure.Persistence;
+using Avalon.Application.Services.Books;
+// using Avalon.Application.Services.Genre;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +35,8 @@ builder.Services.AddVersionedApiExplorer(options =>
     options.GroupNameFormat = "'v'VVV";
     options.SubstituteApiVersionInUrl = true;
 });
+
+builder.Services.AddApplicationServices();
 
 var app = builder.Build();
 
