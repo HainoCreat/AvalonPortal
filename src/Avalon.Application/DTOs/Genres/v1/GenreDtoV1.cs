@@ -1,6 +1,6 @@
-namespace Avalon.Domain.Entities;
+namespace Avalon.Application.DTOs.Genres.v1;
 
-public class Genre
+public class GenreDtoV1
 {
     public int Id {get; set;}
 

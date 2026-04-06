@@ -1,17 +1,14 @@
-namespace Avalon.Domain.Entities;
+namespace Avalon.Application.DTOs.Books.v1;
 
-public class Book
+public class BookDtoV1
 {
     public Guid Id {get; set;}
 
     public required string Title {get; set;}
-
-    public string? Text {get; set;}
 
     public string? Description {get; set;}
 
     public string? Dedication {get; set;}
 
     public DateTimeOffset CreatedAt {get; set;}
-
 }

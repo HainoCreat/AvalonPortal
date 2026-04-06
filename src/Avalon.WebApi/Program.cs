@@ -1,5 +1,7 @@
 using System;
 using Avalon.Infrastructure.Persistence;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -13,6 +15,21 @@ builder.Services.AddDbContext<AvalonApplicationDbContext>(options =>
     options.UseNpgsql(
         builder.Configuration.GetConnectionString("AvalonDb")
     ));
+
+//Подключение API версионирования
+builder.Services.AddApiVersioning(options =>
+{
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.ReportApiVersions = true;           // в заголовке ответа будет Api-Version: 1.0
+    options.ApiVersionReader = new UrlSegmentApiVersionReader(); // читаем версию из URL
+});
+
+builder.Services.AddVersionedApiExplorer(options =>
+{
+    options.GroupNameFormat = "'v'VVV";
+    options.SubstituteApiVersionInUrl = true;
+});
 
 var app = builder.Build();
 
