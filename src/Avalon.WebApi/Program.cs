@@ -36,7 +36,7 @@ builder.Services.AddVersionedApiExplorer(options =>
     options.SubstituteApiVersionInUrl = true;
 });
 
-builder.Services.AddApplicationServices();
+// builder.Services.AddApplicationServices();
 
 var app = builder.Build();
 
