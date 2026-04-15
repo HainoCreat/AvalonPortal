@@ -4,10 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Avalon.Application.Common.Interfaces;
 
-using Avalon.Application.Services.Extensions;
 using Avalon.Infrastructure.Persistence;
-using Avalon.Application.Services.Books;
 // using Avalon.Application.Services.Genre;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +19,9 @@ builder.Services.AddDbContext<AvalonApplicationDbContext>(options =>
     options.UseNpgsql(
         builder.Configuration.GetConnectionString("AvalonDb")
     ));
+
+builder.Services.AddScoped<IAvalonApplicationDbContext>(provider => 
+    provider.GetRequiredService<AvalonApplicationDbContext>());
 
 //Подключение API версионирования
 builder.Services.AddApiVersioning(options =>
@@ -37,6 +39,9 @@ builder.Services.AddVersionedApiExplorer(options =>
 });
 
 // builder.Services.AddApplicationServices();
+
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+
 
 var app = builder.Build();
 
