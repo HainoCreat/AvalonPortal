@@ -3,6 +3,7 @@
 
 Инструменты: C#, ASP WebApi + Blazorwasm.
 
-Статус: Проект Заморожен.
+Статус: Проект в разработке.
+Возобновление разработки 20.04.2026.
 
 ![Blazor Icon](https://github.com/HainoCreat/AvalonPortal/blob/eb00f2ef35a4a35999eff21c86853d080069560c/src/Avalon.Web.Blazor/wwwroot/favicon.png)
