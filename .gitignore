@@ -6,6 +6,8 @@
 # dotenv files
 .env
 
+bin/
+obj/
 # User-specific files
 *.rsuser
 *.suo
@@ -16,4 +18,4 @@
 *.vs/
 .vscode/
 wwwroot/lib/
-appsettings.*.json   # если не хочешь коммитить секреты
+appsettings.*.json 
