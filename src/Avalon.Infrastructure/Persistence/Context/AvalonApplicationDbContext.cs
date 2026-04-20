@@ -1,11 +1,9 @@
-using Avalon.Domain.Entities;
-// using Avalon.Infrastructure.Persistence;
+using Avalon.Domain.Entities.Books;
 using Microsoft.EntityFrameworkCore;
-using Avalon.Application.Common.Interfaces;
 
-namespace Avalon.Infrastructure.Persistence;
+namespace Avalon.Infrastructure.Persistence.Context;
 
-public class AvalonApplicationDbContext : DbContext, IAvalonApplicationDbContext
+public class AvalonApplicationDbContext : DbContext
 {
     public AvalonApplicationDbContext(DbContextOptions<AvalonApplicationDbContext> options) : base(options)
     {

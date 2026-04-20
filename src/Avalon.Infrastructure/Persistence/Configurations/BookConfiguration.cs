@@ -1,4 +1,4 @@
-using Avalon.Domain.Entities;
+using Avalon.Domain.Entities.Books;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

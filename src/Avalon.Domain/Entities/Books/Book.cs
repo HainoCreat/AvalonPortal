@@ -1,4 +1,4 @@
-namespace Avalon.Domain.Entities;
+namespace Avalon.Domain.Entities.Books;
 
 public class Book
 {

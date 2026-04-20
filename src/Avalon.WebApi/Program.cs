@@ -4,9 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using Avalon.Application.Common.Interfaces;
 
-using Avalon.Infrastructure.Persistence;
+using Avalon.Infrastructure.Persistence.Context;
 // using Avalon.Application.Services.Genre;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,8 +19,8 @@ builder.Services.AddDbContext<AvalonApplicationDbContext>(options =>
         builder.Configuration.GetConnectionString("AvalonDb")
     ));
 
-builder.Services.AddScoped<IAvalonApplicationDbContext>(provider => 
-    provider.GetRequiredService<AvalonApplicationDbContext>());
+// builder.Services.AddScoped<IAvalonApplicationDbContext>(provider => 
+//     provider.GetRequiredService<AvalonApplicationDbContext>());
 
 //Подключение API версионирования
 builder.Services.AddApiVersioning(options =>
