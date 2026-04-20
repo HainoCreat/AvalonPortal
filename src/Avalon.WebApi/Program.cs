@@ -19,8 +19,7 @@ builder.Services.AddDbContext<AvalonApplicationDbContext>(options =>
         builder.Configuration.GetConnectionString("AvalonDb")
     ));
 
-// builder.Services.AddScoped<IAvalonApplicationDbContext>(provider => 
-//     provider.GetRequiredService<AvalonApplicationDbContext>());
+// ~
 
 //Подключение API версионирования
 builder.Services.AddApiVersioning(options =>
