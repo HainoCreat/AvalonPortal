@@ -1,5 +1,8 @@
-"applicationUrl": "https://localhost:7284;http://localhost:5186",
+Мой первый тестовый проект созданный 02.04.2026.
+Тип: Литературный портал.
 
-C:\Users\User\OneDrive\Документы\projects\code\api\Avalon\src\Avalon.Web.Blazor\wwwroot\favicon.png
+Инструменты: C#, ASP WebApi + Blazorwasm.
 
-<img src="src/Avalon.Web.Blazor/wwwroot/favicon.png"
+Статус: Проект Заморожен.
+
+![Blazor Icon](https://github.com/HainoCreat/AvalonPortal/blob/eb00f2ef35a4a35999eff21c86853d080069560c/src/Avalon.Web.Blazor/wwwroot/favicon.png)
