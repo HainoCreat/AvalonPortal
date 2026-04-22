@@ -8,5 +8,4 @@ public class Genre
 
     public string? Description {get; set;}
 
-    public DateTimeOffset CreatedAt {get; set;}
 }
